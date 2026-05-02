@@ -4,7 +4,6 @@ import {
   InstagramIcon,
   Mail,
   Heart,
-  BookOpen,
 } from 'lucide-react';
 import { PROFILE, SOCIAL_LINKS } from '@/data/constants';
 
@@ -13,16 +12,15 @@ const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
   linkedin: Linkedin,
   email: Mail,
   instagram: InstagramIcon,
-  blog: BookOpen,
 };
 
 const Finale = () => {
   const currentYear = new Date().getFullYear();
 
   const marqueeTags = [
-    `${PROFILE.shortName} 🚀`,
+    `${PROFILE.shortName} `,
     'Full Stack Dev | Mobile App Dev | React | Next.js | AI',
-    'Designing clean UI/UX + Smart solutions🔖',
+    'Designing clean UI/UX + Smart solutions',
     'Exploring tech through Vibe Coding',
   ];
 

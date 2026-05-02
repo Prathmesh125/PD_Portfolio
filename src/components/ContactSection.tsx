@@ -8,7 +8,6 @@ import {
   Github,
   Linkedin,
   InstagramIcon,
-  BookOpen,
   Send,
   LucideGlobe2,
 } from 'lucide-react';
@@ -18,7 +17,6 @@ const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
   github: Github,
   linkedin: Linkedin,
   instagram: InstagramIcon,
-  blog: BookOpen,
 };
 
 const contactSocials = SOCIAL_LINKS.filter((l) => l.id !== 'email');

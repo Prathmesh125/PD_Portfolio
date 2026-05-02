@@ -7,7 +7,6 @@ import {
   Mail,
   ChevronDown,
   InstagramIcon,
-  BookOpen,
 } from 'lucide-react';
 import Magnetic from './Magnetic';
 import { PROFILE, SOCIAL_LINKS } from '@/data/constants';
@@ -23,7 +22,6 @@ const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
   github: Github,
   linkedin: Linkedin,
   instagram: InstagramIcon,
-  blog: BookOpen,
   email: Mail,
 };
 

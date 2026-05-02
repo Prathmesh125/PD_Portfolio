@@ -50,7 +50,6 @@ const projects = [
     ],
     isPrivate: true,
     githubUrl: '#',
-    liveUrl: '#',
   },
   {
     title: 'NLPRec - Intelligent Course Recommendation',
@@ -79,8 +78,8 @@ const projects = [
       'MongoDB',
       'Gemini API',
     ],
-    isPrivate: true,
-    githubUrl: '#',
+    isPrivate: false,
+    githubUrl: 'https://github.com/Prathmesh125/StationaryStories',
     liveUrl: 'https://stationary-stories.vercel.app/login',
   },
   {

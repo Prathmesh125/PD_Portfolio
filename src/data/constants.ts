@@ -27,12 +27,7 @@ export const SOCIAL_LINKS = [
   {
     id: 'instagram',
     label: 'Instagram',
-    href: '#',
-  },
-  {
-    id: 'blog',
-    label: 'Blog',
-    href: '#',
+    href: 'https://www.instagram.com/prathmesh_125?igsh=MWxyNnh3MzBlMmo4bA==',
   },
   {
     id: 'email',
