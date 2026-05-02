@@ -4,7 +4,7 @@ const education = [
   {
     degree: 'Bachelor of Technology in Information Technology',
     school: 'AISSMS Institute Of Information Technology, Pune, India',
-    year: '2023 – 2027',
+    year: '2023 – 2027' + ' | ' + 'CGPA: 8.45',
   },
 ];
 

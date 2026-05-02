@@ -37,21 +37,6 @@ const projects = [
     liveUrl: 'https://spinmeal.svnate.com/',
   },
   {
-    title: 'Eduate - EdTech Learning Platform',
-    description:
-      'Developed a scalable full-stack EdTech platform featuring live streaming (WebRTC), real-time chat, notes upload, and multi-role dashboards with RBAC.',
-    tags: [
-      'React',
-      'Next.js',
-      'Node.js',
-      'MongoDB',
-      'PostgreSQL',
-      'WebRTC',
-    ],
-    isPrivate: true,
-    githubUrl: '#',
-  },
-  {
     title: 'NLPRec - Intelligent Course Recommendation',
     description:
       'Built an NLP-powered RAG-based course recommender with TF-IDF vectorization and cosine similarity; achieved F1@5 = 0.82, outperforming keyword baselines.',
@@ -96,21 +81,6 @@ const projects = [
     isPrivate: true,
     githubUrl: '#',
     liveUrl: 'https://rescaleindiafoundation.org/',
-  },
-  {
-    title: 'Sneaker Shop - E-commerce Website',
-    description:
-      'Built a responsive e-commerce frontend with Bootstrap mobile-first layout, dynamic product filtering, and real-time cart updates.',
-    tags: [
-      'HTML',
-      'CSS',
-      'Bootstrap',
-      'JavaScript',
-      'DOM Manipulation',
-    ],
-    isPrivate: false,
-    githubUrl: 'https://github.com/Prathmesh125/Sneaker-Store',
-    liveUrl: 'https://prathmesh125.github.io/Sneaker-Store/',
   },
 ];
 
