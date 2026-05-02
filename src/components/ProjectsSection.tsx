@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Github, ExternalLink } from 'lucide-react';
+import { Github, ExternalLink, Lock } from 'lucide-react';
 import SectionBlock from './SectionBlock';
 import { Badge } from './ui/badge';
 import { playHover, playClick } from '@/hooks/useSoundEffects';
@@ -17,7 +17,8 @@ const projects = [
       'Android/iOS',
       'ASO',
     ],
-    githubUrl: 'https://github.com/Prathmesh125/Trackate',
+    isPrivate: true,
+    githubUrl: '#',
     liveUrl: 'https://trackate.svnate.com/',
   },
   {
@@ -31,7 +32,8 @@ const projects = [
       'Payment Gateway',
       'REST API',
     ],
-    githubUrl: 'https://github.com/Prathmesh125/SpinMeal',
+    isPrivate: true,
+    githubUrl: '#',
     liveUrl: 'https://spinmeal.svnate.com/',
   },
   {
@@ -46,7 +48,8 @@ const projects = [
       'PostgreSQL',
       'WebRTC',
     ],
-    githubUrl: 'https://github.com/Prathmesh125/Eduate',
+    isPrivate: true,
+    githubUrl: '#',
     liveUrl: '#',
   },
   {
@@ -61,7 +64,8 @@ const projects = [
       'Generative AI',
       'Machine Learning',
     ],
-    githubUrl: 'https://github.com/Prathmesh125/NLPRec',
+    isPrivate: false,
+    githubUrl: 'https://github.com/Prathmesh125/Intelligent-Course-Recommendation-System',
     liveUrl: 'https://intelligent-course-recommendation-system.streamlit.app/',
   },
   {
@@ -75,8 +79,9 @@ const projects = [
       'MongoDB',
       'Gemini API',
     ],
-    githubUrl: 'https://github.com/Prathmesh125/Stationary-Stories',
-    liveUrl: '#',
+    isPrivate: true,
+    githubUrl: '#',
+    liveUrl: 'https://stationary-stories.vercel.app/login',
   },
   {
     title: 'Rescale India Foundation - NGO Website',
@@ -89,7 +94,8 @@ const projects = [
       'WCAG',
       'SEO',
     ],
-    githubUrl: 'https://github.com/Prathmesh125/Rescale-India',
+    isPrivate: true,
+    githubUrl: '#',
     liveUrl: 'https://rescaleindiafoundation.org/',
   },
   {
@@ -103,7 +109,8 @@ const projects = [
       'JavaScript',
       'DOM Manipulation',
     ],
-    githubUrl: 'https://github.com/Prathmesh125/Sneaker-Shop',
+    isPrivate: false,
+    githubUrl: 'https://github.com/Prathmesh125/Sneaker-Store',
     liveUrl: 'https://prathmesh125.github.io/Sneaker-Store/',
   },
 ];
@@ -168,16 +175,23 @@ const ProjectsSection = () => (
               </div>
 
               <div className="flex gap-3 mt-4">
-                <a
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={playClick}
-                  className="flex-1 flex items-center justify-center gap-2 px-3 py-2 border-2 border-black bg-white text-[9px] font-black uppercase tracking-widest transition-all duration-300 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[1px] hover:translate-y-[1px] hover:bg-black hover:text-white"
-                >
-                  <Github className="w-3.5 h-3.5" />
-                  Source
-                </a>
+                {project.isPrivate ? (
+                  <div className="flex-1 flex items-center justify-center gap-2 px-3 py-2 border-2 border-black bg-gray-100 text-[9px] font-black uppercase tracking-widest text-black/50 cursor-not-allowed">
+                    <Lock className="w-3.5 h-3.5" />
+                    Private
+                  </div>
+                ) : (
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={playClick}
+                    className="flex-1 flex items-center justify-center gap-2 px-3 py-2 border-2 border-black bg-white text-[9px] font-black uppercase tracking-widest transition-all duration-300 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[1px] hover:translate-y-[1px] hover:bg-black hover:text-white"
+                  >
+                    <Github className="w-3.5 h-3.5" />
+                    Source
+                  </a>
+                )}
                 <a
                   href={project.liveUrl}
                   target="_blank"
