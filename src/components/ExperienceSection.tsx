@@ -13,7 +13,7 @@ const experiences = [
     company: 'SaptaSwad Foods Private Limited',
     period: 'Feb - Apr 2025',
     description:
-      "Drove brand growth through digital content creation, social media advertising, and Canva-based product packaging design, boosting online reach and engagement metrics. Architected and launched the company's e-commerce website with product listings, improving digital presence, conversion funnel, and customer accessibility.",
+      "Done brand growth through digital content creation, social media advertising, and Canva-based product packaging design, boosting online reach and engagement metrics. Architected and launched the company's e-commerce website with product listings, improving digital presence, conversion funnel, and customer accessibility.",
   },
 ];
 
