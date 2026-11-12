@@ -105,6 +105,8 @@ const Terminal = () => {
               <span>View technical skills</span>
               <span className="text-green-400">projects</span>{' '}
               <span>List recent projects</span>
+              <span className="text-green-400">certs</span>{' '}
+              <span>View certifications</span>
               <span className="text-green-400">contact</span>{' '}
               <span>How to reach me</span>
               <span className="text-green-400">theme [t]</span>{' '}
@@ -129,7 +131,7 @@ const Terminal = () => {
         case 'cat readme.md':
           return "Prathmesh's Portfolio v1.0.0. Built with React, TypeScript, and a reckless amount of neobrutalism.";
         case 'cat experience.txt':
-          return 'Freelance Software Developer. Secured international clients and managed end-to-end SDLC.';
+          return 'AI Software Development Intern at SVNATE. Built production backend integrations, REST APIs, and data-driven features.';
         case 'cat education.txt':
           return 'Bachelor of Technology in IT at AISSMS IOIT, specializing in AI and Mobile Dev.';
         case 'cat roadmap.sh':
@@ -142,8 +144,8 @@ const Terminal = () => {
               <p className="mb-1 text-yellow-400">CORE STACK:</p>
               <p>• React / Next.js</p>
               <p>• Flutter / Dart</p>
-              <p>• Node.js / MongoDB</p>
-              <p>• Generative AI / RAG</p>
+              <p>• Node.js / PostgreSQL / MongoDB</p>
+              <p>• AI Agents / Generative AI / RAG</p>
             </div>
           );
         case 'projects':
@@ -151,16 +153,50 @@ const Terminal = () => {
             <div className="flex flex-col gap-1">
               <p className="mb-1 text-purple-400">RECENT WORK:</p>
               <a href="#projects" className="text-blue-400 hover:underline">
-                1. Trackate (Fintech App)
+                1. Jurium (LegalTech AI Platform)
               </a>
               <a href="#projects" className="text-blue-400 hover:underline">
-                2. SpinMeal
+                2. Trackate (Fintech App)
               </a>
               <a href="#projects" className="text-blue-400 hover:underline">
-                3. Eduate Platform
+                3. Smart Agentic Travel Orchestrator
               </a>
               <a href="#projects" className="text-blue-400 hover:underline">
-                4. NLPRec System
+                4. AI Course Intelligent Engine
+              </a>
+              <a href="#projects" className="text-blue-400 hover:underline">
+                5. LinkedIn Automation Agent
+              </a>
+            </div>
+          );
+        case 'certs':
+        case 'certifications':
+          return (
+            <div className="flex flex-col gap-1">
+              <p className="mb-1 text-yellow-400">CREDENTIALS & BADGES:</p>
+              <a
+                href="https://www.credly.com/badges/7d05623b-d737-4a4a-ab1d-6f49f6c4a3de"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:underline"
+              >
+                1. AWS Certified AI Practitioner
+              </a>
+              <a
+                href="https://www.credly.com/badges/0437538a-90a6-4ada-a5a7-c6fd7a93efe8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:underline"
+              >
+                2. AWS Certified Cloud Practitioner
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1KeDzLcJodTqq86RBXyuQ0Hl-j0nZqMUZ/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:underline"
+              >
+                3. Oracle OCI Agentic AI Foundations
               </a>
             </div>
           );
@@ -168,6 +204,12 @@ const Terminal = () => {
           return (
             <div>
               <p className="text-red-400 mb-1">REACH OUT:</p>
+              <p>
+                Status:{' '}
+                <span className="text-green-400">
+                  Available for Freelance Projects • Immediate Joining
+                </span>
+              </p>
               <p>
                 Email:{' '}
                 <a
@@ -230,6 +272,11 @@ const Terminal = () => {
       // Projects
       if (lower.match(/(project|work|app|site|portfolio)/)) {
         return getCommandResponse('projects');
+      }
+
+      // Certifications
+      if (lower.match(/(cert|certificate|credential|badge|aws|oracle)/)) {
+        return getCommandResponse('certs');
       }
 
       // Contact

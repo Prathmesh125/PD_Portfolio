@@ -85,7 +85,11 @@ const ContactSection = () => {
                 <p className="text-xs uppercase tracking-widest text-foreground/50 mb-1">
                   Current Status
                 </p>
-                <p className="font-mono text-sm">AVAILABLE_FOR_PROJECTS</p>
+                <p className="font-mono text-sm font-semibold">AVAILABLE_FOR_FREELANCE_PROJECTS</p>
+                <p className="font-mono text-xs text-green-700 font-bold mt-1 flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-none bg-green-500 animate-pulse" />
+                  Available for Immediate Joining
+                </p>
               </div>
             </div>
           </div>

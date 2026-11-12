@@ -15,7 +15,7 @@ const AboutSection = () => (
           I specialize in building scalable web and mobile applications using modern technologies like React.js, Next.js, and Flutter. I have a strong passion for integrating Generative AI and NLP into real-world applications to drive automation and intelligence.
         </p>
         <p className="body-text max-w-2xl mt-6 mb-8">
-          With experience as a Freelance Software Developer and a Growth & Tech intern, I thrive in managing end-to-end SDLC, collaborating cross-functionally, and delivering high-quality, user-centric solutions. From architecting e-commerce platforms to developing real-time FinTech and EdTech systems, I am driven by solving complex problems with clean, performant code.
+          With experience as an AI Software Development Intern and a Growth & Tech intern, I thrive in managing end-to-end SDLC, collaborating cross-functionally, and delivering high-quality, user-centric solutions. From architecting e-commerce platforms to developing real-time FinTech and EdTech systems, I am driven by solving complex problems with clean, performant code.
         </p>
         <a
           href={`https://${PROFILE.website}`}

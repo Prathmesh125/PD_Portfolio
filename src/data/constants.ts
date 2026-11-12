@@ -7,10 +7,11 @@ export const PROFILE = {
   shortName: 'Prathmesh',
   alias: 'Prathmesh',
   title: 'Full-Stack & Mobile Developer',
-  email: 'dawkharprathmesh99@gmail.com',
+  email: 'dawkarprathmesh99@gmail.com',
   phone: '+917972807017',
   website: 'github.com/Prathmesh125',
   blogHost: '',
+  status: 'Available for Freelance Projects (Available for Immediate Joining)',
 } as const;
 
 export const SOCIAL_LINKS = [
@@ -32,7 +33,7 @@ export const SOCIAL_LINKS = [
   {
     id: 'email',
     label: 'Email',
-    href: 'mailto:dawkharprathmesh99@gmail.com',
+    href: 'mailto:dawkarprathmesh99@gmail.com',
   },
 ] as const;
 

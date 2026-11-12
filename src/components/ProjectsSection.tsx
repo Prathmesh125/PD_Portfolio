@@ -6,81 +6,95 @@ import { playHover, playClick } from '@/hooks/useSoundEffects';
 
 const projects = [
   {
-    title: 'Trackate - Expense Tracking App',
+    title: 'Jurium - AI Legal Intelligence Platform',
     isNew: true,
     description:
-      'Built and shipped a cross-platform fintech app using Flutter and Firebase with real-time expense tracking, user authentication, and cloud sync; achieved 1,000+ downloads in Month 1.',
+      'An AI-powered legal intelligence and case management platform that streamlines legal workflows through evidence-grounded RAG, semantic precedent search, intelligent document analysis, and context-aware AI assistance.',
     tags: [
-      'Flutter',
-      'Firebase',
-      'Dart',
-      'Android/iOS',
-      'ASO',
+      'Next.js',
+      'TypeScript',
+      'RAG',
+      'LangChain',
+      'Google Gemini',
+      'PostgreSQL',
+      'pgvector',
+      'Cloud Flare',
     ],
     isPrivate: true,
     githubUrl: '#',
+    liveUrl: '#',
+  },
+  {
+    title: 'Trackate - Smart Expense Tracking App',
+    isNew: false,
+    description:
+      'Built and launched a cross-platform fintech application featuring automatic expense detection, real-time spending insights, intelligent budgeting, and seamless group bill splitting; achieved 1,000+ downloads in Month 1.',
+    tags: [
+      'Flutter',
+      'Dart',
+      'Firebase',
+      'Firestore',
+      'Android',
+      'iOS',
+      'REST API',
+    ],
+    isPrivate: false,
+    githubUrl: 'https://github.com/Prathmesh125/Trackate',
     liveUrl: 'https://trackate.svnate.com/',
   },
   {
-    title: 'SpinMeal - Food Discovery Platform',
+    title: 'Smart Agentic Travel Orchestrator',
     isNew: false,
     description:
-      'Engineered a cross-platform food discovery platform with Firebase-secured user authentication, payment gateway integration, and mobile-first responsive design.',
+      'Developed a multi-agent AI travel planning system using LangGraph and Gemini, coordinating specialized agents for flight discovery, hotel research, and personalized itinerary generation.',
     tags: [
-      'React Native',
-      'Firebase',
-      'Payment Gateway',
-      'REST API',
+      'Python',
+      'LangGraph',
+      'LangChain',
+      'Google Gemini',
+      'Multi-Agent AI',
+      'PostgreSQL',
+      'Streamlit',
     ],
-    isPrivate: true,
-    githubUrl: '#',
-    liveUrl: 'https://spinmeal.svnate.com/',
+    isPrivate: false,
+    githubUrl: 'https://github.com/Prathmesh125/AI-Travel-Planning-System-using-LangGraph',
+    liveUrl: 'https://smart-agentic-travel-orchestration.streamlit.app/',
   },
   {
-    title: 'NLPRec - Intelligent Course Recommendation',
+    title: 'AI Course Intelligent Engine',
+    isNew: false,
     description:
-      'Built an NLP-powered RAG-based course recommender with TF-IDF vectorization and cosine similarity; achieved F1@5 = 0.82, outperforming keyword baselines.',
+      'Engineered an NLP-powered recommendation engine using TF-IDF and cosine similarity to understand natural-language learning requirements and deliver personalized course recommendations.',
     tags: [
       'Python',
       'NLP',
-      'RAG',
+      'Scikit-learn',
+      'TF-IDF',
+      'NLTK',
       'Streamlit',
       'Generative AI',
-      'Machine Learning',
     ],
     isPrivate: false,
     githubUrl: 'https://github.com/Prathmesh125/Intelligent-Course-Recommendation-System',
     liveUrl: 'https://intelligent-course-recommendation-system.streamlit.app/',
   },
   {
-    title: 'Stationary Stories',
+    title: 'LinkedIn Automation - AI Job Application Agent',
+    isNew: false,
     description:
-      'Built a full-stack inventory SaaS with Generative AI demand forecasting via Gemini API, real-time Chart.js dashboards, and scalable MongoDB data layer.',
+      'Built a local-first AI automation agent that discovers relevant LinkedIn jobs, parses resumes, dynamically handles application forms, and automates Easy Apply workflows using Gemini and Playwright.',
     tags: [
-      'React',
-      'Next.js',
-      'Node.js',
-      'MongoDB',
-      'Gemini API',
+      'Python',
+      'Playwright',
+      'Google Gemini',
+      'Flask',
+      'PyWebview',
+      'Automation',
+      'AI Agents',
     ],
     isPrivate: false,
-    githubUrl: 'https://github.com/Prathmesh125/StationaryStories',
-    liveUrl: 'https://stationary-stories.vercel.app/login',
-  },
-  {
-    title: 'Rescale India Foundation - NGO Website',
-    description:
-      'Designed and deployed a fully responsive, WCAG-accessible NGO website with optimized content architecture for better SEO visibility.',
-    tags: [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'WCAG',
-      'SEO',
-    ],
-    isPrivate: true,
-    githubUrl: '#',
-    liveUrl: 'https://rescaleindiafoundation.org/',
+    githubUrl: 'https://github.com/Prathmesh125/Linkedin-Automation',
+    liveUrl: '#',
   },
 ];
 
@@ -161,16 +175,23 @@ const ProjectsSection = () => (
                     Source
                   </a>
                 )}
-                <a
-                  href={project.liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={playClick}
-                  className="flex-1 flex items-center justify-center gap-2 px-3 py-2 border-2 border-black bg-black text-white text-[9px] font-black uppercase tracking-widest transition-all duration-300 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[1px] hover:translate-y-[1px] hover:bg-white hover:text-black"
-                >
-                  <ExternalLink className="w-3.5 h-3.5" />
-                  Live
-                </a>
+                {project.liveUrl && project.liveUrl !== '#' ? (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={playClick}
+                    className="flex-1 flex items-center justify-center gap-2 px-3 py-2 border-2 border-black bg-black text-white text-[9px] font-black uppercase tracking-widest transition-all duration-300 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[1px] hover:translate-y-[1px] hover:bg-white hover:text-black"
+                  >
+                    <ExternalLink className="w-3.5 h-3.5" />
+                    Live
+                  </a>
+                ) : (
+                  <div className="flex-1 flex items-center justify-center gap-2 px-3 py-2 border-2 border-black bg-gray-100 text-[9px] font-black uppercase tracking-widest text-black/50 cursor-not-allowed">
+                    <ExternalLink className="w-3.5 h-3.5" />
+                    Live
+                  </div>
+                )}
               </div>
             </div>
           </motion.div>

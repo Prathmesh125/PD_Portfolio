@@ -2,9 +2,10 @@ import SectionBlock from './SectionBlock';
 
 const education = [
   {
-    degree: 'Bachelor of Technology in Information Technology',
+    degree:
+      'Bachelor of Technology in Information Technology (Honours in Cyber-Security)',
     school: 'AISSMS Institute Of Information Technology, Pune, India',
-    year: '2023 – 2027' + ' | ' + 'CGPA: 8.45',
+    year: '2023 – 2027 | CGPA: 8.40',
   },
 ];
 

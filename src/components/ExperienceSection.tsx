@@ -2,11 +2,11 @@ import SectionBlock from './SectionBlock';
 
 const experiences = [
   {
-    role: 'Freelance Software Developer',
-    company: 'Independent Contractor (Remote)',
-    period: '2023 - Present',
+    role: 'AI Software Development Intern',
+    company: 'SVNATE (Pune, India)',
+    period: 'Feb 2026 – Aug 2026',
     description:
-      'Secured international client from Europe; managed end-to-end SDLC including requirements gathering, sprint planning, stakeholder communication, and cross-functional team coordination. Established agile task allocation framework enabling efficient remote project delivery, on-time milestones, and iterative product improvement.',
+      'Developed and maintained production applications involving backend integrations, REST APIs, database-driven functionality, authentication, and end-to-end software development workflows. Contributed to data-driven features involving structured data processing, API integration, cloud services, and database operations while applying software engineering practices to build scalable and maintainable solutions.',
   },
   {
     role: 'Growth & Tech Intern',
